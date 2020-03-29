@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* global configuration */
+@font-face {
+    font-family: 'awesome';
+    font-style: normal;
+    font-weight: normal;
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot");
+    src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff") format("woff"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf") format("truetype"), url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg#fontawesomeregular") format("svg");
+}
+
+html {
+    /*font-family: sans-serif;*/
+    font-family: open sans,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    /* 1 */
+    -ms-text-size-adjust: 100%;
+    /* 2 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+body {
+    /* remove default margin */
+    margin: 0;
+    padding: 1rem;
+    /*background: #31b0d5;*/
+    box-sizing: border-box;
+}
+
+a {
+    color: #767676;
+    text-decoration: none;
+    transition: color .2s, opacity .2s, outline .2s;
+}
+
+a:focus, a:hover {
+    color: #000;
+}
+
+a:focus {
+    outline: thin dotted;
+    outline-offset: .3rem;
+}
+
+a:active {
+    opacity: 0.4;
+}
+
+img {
+    max-width: 90%;
+}
+
+/* skip content link control, if this css file is loaded successfully, it disappears, otherwise it shows up*/
+body > a[href="#content"] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* wrapper configuration */
+.wrapper {
+    background: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    max-width: 1080px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+/* header configuration */
+#mobile-nav-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    text-align: center;
+    float: right;
+    position: relative;
+    transition: background .5s;
+}
+
+#mobile-nav-icon span {
+    position: absolute;
+    left: calc((100% - 20px)/2);
+    top: calc((100% - 2px)/2);
+    width: 20px;
+    height: 2px;
+    /*background-color: #c05b4d;*/
+    background-color: #000;
+}
+
+#mobile-nav-icon span:nth-child(1) {
+    transform: translateY(6px) rotate(0deg);
+}
+
+#mobile-nav-icon span:nth-child(3) {
+    transform: translateY(-6px) rotate(0deg);
+}
+
+#site-nav {
+    min-height: 50px;
+    border-bottom: 1px solid #ededed;
+    padding: 1.5rem 0 0 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#site-nav-title {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+#site-nav-title a {
+    color: #000;
+}
+
+.flex-separator {
+    flex-grow: 1;
+}
+
+#site-nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav-menu-item {
+    display: inline;
+    padding: 8px;
+}
+
+.current-menu-item a {
+    font-weight: bold;
+    color: #000;
+}
+
+/*content style*/
+.content {
+}
+
+.content.two-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content.one-column main {
+    width: 100%;
+}
+
+.content.two-column main {
+    width: 75%;
+}
+
+.post-details a[rel="bookmark"]:before {
+    content: '\f133';
+}
+
+.post-footer {
+    border-bottom: thin solid #767676;
+    clear: both;
+    font-size: smaller;
+    margin: 0 0 1rem;
+    padding: 0 0 1rem;
+}
+
+.post-footer span.post-categories:before {
+    content: '\f07c';
+}
+
+.post-footer span.post-tags:before {
+    content: '\f02b';
+}
+
+.post-footer span:before {
+    font: 100%/1 awesome;
+    padding: 0 .3rem 0 0;
+}
+
+.post-details a:before {
+    font: 100%/1 awesome;
+    padding: 0 .3rem 0 0;
+}
+
+/* side bar configuration */
+.sidebar {
+    margin-left: 2rem;
+    width: calc(25% - 2rem);
+}
+
+.sidebar .widget {
+    margin-bottom: 2rem;
+}
+
+.sidebar .widget ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar .widget li {
+    border-left: 3px solid #81abea;
+    padding-left: 6px;
+    margin-bottom: 7px;
+    padding-top: 0;
+    margin-top: 2px;
+    line-height: 1.4!important;
+}
+
+/* footer configuration */
+#site-footer {
+    border-top: 1px solid #ededed;
+    font-size: .857142857rem;
+    padding: 0.5rem 0;
+    margin-top: 1.5rem;
+}
+
+/* about configuration*/
+.content.one-column.about {
+    text-align: center;
+}
+
+/* mobile device support */
+@media only screen and (max-width: 956px) {
+    body {
+        padding: 0;
+    }
+
+    .wrapper {
+        padding: 0 1rem;
+    }
+
+    .content.two-column main {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    #site-nav {
+        display: none;
+    }
+}

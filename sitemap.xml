@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://whc.one/projects/androidscratch/</loc>
+    <lastmod>2019-04-07T13:11:19+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/projects/xecp/</loc>
+    <lastmod>2019-03-24T00:01:53+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/projects/simplemii/</loc>
+    <lastmod>2019-03-14T10:24:13+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/about/</loc>
+    <lastmod>2019-03-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/</loc>
+    <lastmod>2017-06-26T18:27:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/archives/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/projects/</loc>
+    <lastmod>2019-04-07T13:11:19+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://whc.one/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

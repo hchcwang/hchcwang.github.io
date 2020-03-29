@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on HcWang</title>
+    <link>http://whc.one/projects/</link>
+    <description>Recent content in Projects on HcWang</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <lastBuildDate>Sun, 07 Apr 2019 13:11:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://whc.one/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AndroidScratch</title>
+      <link>http://whc.one/projects/androidscratch/</link>
+      <pubDate>Sun, 07 Apr 2019 13:11:19 +0800</pubDate>
+      
+      <guid>http://whc.one/projects/androidscratch/</guid>
+      <description>Some useful reusable modules developed by me.</description>
+    </item>
+    
+    <item>
+      <title>XECP</title>
+      <link>http://whc.one/projects/xecp/</link>
+      <pubDate>Sun, 24 Mar 2019 00:01:53 +0800</pubDate>
+      
+      <guid>http://whc.one/projects/xecp/</guid>
+      <description>XECP is a confirmatory Edge Computing Platform under development.</description>
+    </item>
+    
+    <item>
+      <title>SimpleMII</title>
+      <link>http://whc.one/projects/simplemii/</link>
+      <pubDate>Thu, 14 Mar 2019 10:24:13 +0800</pubDate>
+      
+      <guid>http://whc.one/projects/simplemii/</guid>
+      <description>A simple MII module.</description>
+    </item>
+    
+  </channel>
+</rss>
